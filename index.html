@@ -104,6 +104,13 @@
                 flex-basis: 100%;
                 height: 0;
             }
+            .mobilearrow {
+                position:fixed;
+                bottom: 10px;
+                text-align: center;
+                width: 100%;
+                pointer-events: none;
+            }
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -127,6 +134,13 @@
                 flex-basis: 100%;
                 height: 0;
             }
+            .mobilearrow {
+                position:fixed;
+                bottom: 10px;
+                text-align: center;
+                width: 100%;
+                pointer-events: none;
+            }
         }
 
         /* Medium devices (landscape tablets, 768px and up) */
@@ -147,6 +161,9 @@
             .break {
                 display: none;
             }
+            .mobilearrow {
+                display: none;
+            }
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
@@ -159,6 +176,8 @@
     </style>
 </head>
 <body>
+
+<div class="mobilearrow"><img src="down.png" alt=""></div>
 
     <div class="center" style=" color: #0b5755; padding-top: 10px;   background: radial-gradient(circle, rgba(254,212,76,1) 61%, rgba(233,181,63,1) 100%);">
             <div class="center" style=" color: #0b5755; padding: 20px; background-position: center; background-repeat: no-repeat; background-image: url(tri.svg)">
