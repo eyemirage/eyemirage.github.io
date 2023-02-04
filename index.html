@@ -174,10 +174,24 @@
         }
 
     </style>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(e) {
+        document.addEventListener('scroll', function(e) {
+            let documentHeight = document.body.scrollHeight;
+            let currentScroll = window.scrollY + window.innerHeight;
+            // When the user is [modifier]px from the bottom, fire the event.
+            let modifier = 10; 
+            if(currentScroll + modifier > documentHeight) {
+                document.getElementById("arrow").style.display = "none";
+            }
+        })
+    })
+    </script>
 </head>
 <body>
 
-<div class="mobilearrow"><img src="down.png" alt=""></div>
+<div class="mobilearrow" id="arrow"><img src="down.png" alt=""></div>
 
     <div class="center" style=" color: #0b5755; padding-top: 10px;   background: radial-gradient(circle, rgba(254,212,76,1) 61%, rgba(233,181,63,1) 100%);">
             <div class="center" style=" color: #0b5755; padding: 20px; background-position: center; background-repeat: no-repeat; background-image: url(tri.svg)">
@@ -223,7 +237,7 @@
         <div class="btm">Step 1: Come to Berlin. If you’re already in Berlin, you’re doing well. 
         </div>
         <div class="btm">Step 2: Wait until Saturday 10 June, 2023 at 19:00</div>
-        <div class="btm">Step 3: Goto Prachtwerk  &bull; Ganghoferstraße 2, Berlin  &bull;  <a href="https://goo.gl/maps/GqMZYg6TSN9nkFah9" target="_blank" class="cream">See a map</a>
+        <div class="btm">Step 3: Go to Prachtwerk  &bull; Ganghoferstraße 2, Berlin  &bull;  <a href="https://goo.gl/maps/GqMZYg6TSN9nkFah9" target="_blank" class="cream">See a map</a>
         </div>
         <div>Step 4: Have fun until 3:00!</div>
     </div>
